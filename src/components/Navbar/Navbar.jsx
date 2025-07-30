@@ -1,6 +1,8 @@
 import { data } from 'autoprefixer';
 import React from 'react';
 import { FaCaretDown } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+
 
 
 const Menu = [
@@ -21,17 +23,17 @@ const Menu = [
 const DropdownLinks = [
 
     {
-        name:"Trending Books",
-        link:"/#",
+        name: "Trending Books",
+        link: "/#",
     },
     {
-        name:"Best Selling",
-        link:"/#",
-     },
+        name: "Best Selling",
+        link: "/#",
+    },
     {
-        name:"Authors",
-        link:"/#",
-     },
+        name: "Authors",
+        link: "/#",
+    },
 
 ];
 
@@ -47,7 +49,7 @@ const Navbar = () => {
                             Books
                         </a>
                     </div>
-                    <div>
+                    <div className="flex items-center gap-4" >
                         <ul className='  justify-around gap-10 items-center hidden sm:flex' >
                             {
                                 Menu.map((menu) => (
@@ -64,24 +66,24 @@ const Navbar = () => {
                                     <span>
                                         <FaCaretDown className='transition duration-300 group-hover:rotate-180' />
                                     </span>
-                            {/* Dropdown  Links Section */}
-                            <div className='absolute-left-9 z-[10px ] hidden  group-hover:block text-black bg-white p-2 shadow-md' >
-                               <ul>
-                               {
-                                DropdownLinks.map((data)=>(
-                                    <li key={data.id} >
-                                        <a href={data.link} className='inline-block w-full rounded-md  p-2  hover:bg-purple-300' >{data.name}</a>
-                                    </li>
+                                    {/* Dropdown  Links Section */}
+                                    <div className='absolute z-[1000px ] top-[100%] right-0 hidden  group-hover:block text-black bg-white p-2 shadow-md w-[150px]' >
+                                        <ul>
+                                            {
+                                                DropdownLinks.map((data) => (
+                                                    <li key={data.id} >
+                                                        <a href={data.link} className='inline-block w-full rounded-md  p-2  hover:bg-purple-200' >{data.name}</a>
+                                                    </li>
 
-                                ))
-                               }
-                               </ul>
-                            </div>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
                                 </a>
                             </li>
-
-
-                        </ul>
+                         </ul>
+                         <button className='bg-gradient-to-r  bg-[#2cb5f5] text-white px-6 py-2 rounded-full flex items-center gap-3  text-xl hover:scale-105 duration-150 '>
+                          Order  <FaShoppingCart className='text-2xl  text-white drop-shadow-sm  cursor-pointer' />  </button>
                     </div>
                 </div>
             </div>

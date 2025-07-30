@@ -12,7 +12,6 @@ export default {
        secondary :"#2aa6df",
      },
      container:{
-
       center:true,
       padding:{
         DEFAULT:"1rem",
