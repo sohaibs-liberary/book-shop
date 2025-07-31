@@ -2,6 +2,7 @@ import { data } from 'autoprefixer';
 import React from 'react';
 import { FaCaretDown } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import DarkMode from './DarkMode';
 
 
 
@@ -49,8 +50,12 @@ const Navbar = () => {
                             Books
                         </a>
                     </div>
+
                     <div className="flex items-center gap-4" >
-                        <ul className='  justify-around gap-10 items-center hidden sm:flex' >
+                        <div>
+                            <DarkMode />
+                        </div>
+                        <ul className='  justify-around gap-10 items-center hidden sm:flex font-semibold ' >
                             {
                                 Menu.map((menu) => (
                                     <li>
