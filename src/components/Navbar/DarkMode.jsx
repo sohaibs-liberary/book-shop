@@ -19,7 +19,7 @@
 
   return (
    <>
-   <div className='relative' >
+   {/*<div className='relative' >
        <img src="https://bookstore-tcj.netlify.app/assets/light-mode-button-X4OXHFfW.png" alt="" 
         
       className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)] transition-all duration-300 absolute right-0 z-10
@@ -36,7 +36,7 @@
 
 />
    </div>
-
+*/ }
 
      </>
   ) }
