@@ -16,11 +16,14 @@ const Hero = () => {
                 <p className='text-sm' >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quos porro, aperiam quis dolorum exercitationem veniam at quod architecto cupiditate temporibus culpa. Autem!
                 </p>
+                <div className=''>
+                    <button className='bg-gradient-to-r from-purple-700 to-pink-400 text-white py-3  px-7 rounded-full my-3 text-xl hover:scale-105 duration-200 mt-4  ' >Order Now</button>
+                </div>
             </div>
             {/* Image section */}
+            <div className='min-h-[450px] flex justify-center itme-center order-1 sm:order-2' >
 
-            <div></div>
-            <div></div>
+            </div>
         </div>
     </div>
    </div>
