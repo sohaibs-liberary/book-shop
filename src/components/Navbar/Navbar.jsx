@@ -87,7 +87,7 @@ const Navbar = () => {
                                 </a>
                             </li>
                          </ul>
-                         <button className='bg-gradient-to-r  bg-[#2cb5f5] text-white px-6 py-2 rounded-full flex items-center gap-3  text-xl hover:scale-105 duration-150 '>
+                         <button className='bg-gradient-to-r   from-purple-600 to-pink-400 text-white px-6 py-2 rounded-full flex items-center gap-3  text-xl hover:scale-105 duration-150 '>
                           Order  <FaShoppingCart className='text-2xl  text-white drop-shadow-sm  cursor-pointer' />  </button>
                     </div>
                 </div>

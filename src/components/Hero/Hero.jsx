@@ -7,10 +7,10 @@ const Hero = () => {
     <div className="cointerner pb-8 sm:pb-0 ">
         <div className='grid grid-cols-1 sm:grid-cols-2'>
             {/*text-content-section*/}
-            <div className=''>
-                <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold' >
+            <div className='px-10'>
+                <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold ' >
                     His Life will forever be Changed
-                    <p className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500' > by Anonymous</p>
+                    <p className='bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-500 text-right  text-sm '  > by Anonymous</p>
 
                 </h1>
                 <p className='text-sm' >
