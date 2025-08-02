@@ -72,11 +72,11 @@ const Navbar = () => {
                                         <FaCaretDown className='transition duration-300 group-hover:rotate-180' />
                                     </span>
                                     {/* Dropdown  Links Section */}
-                                    <div className='absolute z-[1000px ] top-[100%] right-0 hidden  group-hover:block text-black bg-white p-2 shadow-md w-[150px]' >
+                                    <div className='absolute z-[1000px ] top-[100%] right-0 hidden  group-hover:block text-black bg-white p-2 shadow-md w-[150px]  dark:bg-gray-900 dark:text-white   duration-200 ' >
                                         <ul>
                                             {
                                                 DropdownLinks.map((data) => (
-                                                    <li key={data.id} >
+                                                    <li key={data.id}  className='hover:dark:text-purple-900'  >
                                                         <a href={data.link} className='inline-block w-full rounded-md  p-2  hover:bg-purple-200' >{data.name}</a>
                                                     </li>
 
