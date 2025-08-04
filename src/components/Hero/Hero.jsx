@@ -70,22 +70,21 @@ const Hero = () => {
                                 <img src={imageid} alt="" className=' w-[300px] h-[300px] sm:h-[450px ] sm:[w-450px] sm:scale-125 object-contain mx-auto ' />
                             </div>
                             {/*Other-Image-List */}
-                            <div className='flex lg:flex-col  lg:top-1/2 lg:-translate-y-10 lg:py-2 justify-center gap-4 absulate -bottom-[40px] lg: -right-1 bg-white rounded-full '>
+                            <div className='flex lg:flex-col  lg:top-1/2 lg:-translate-y-10 lg:py-2 justify-center gap-4 absulate -bottom-[40px] lg: -right-1 bg-gray-300 dark:bg-gray-900 rounded-full'>
                             {
                                 ImageList.map((data)=>(
 
                                   <img src={data.img} alt=""
-                                  className='max-w-[100px] h-[100px] object-contain inline-block hover:scale-110  duration-200  
-                                  ' 
-                                  onClick={()=>{
+                                  className='max-w-[100px] h-[100px] object-contain inline-block hover:scale-110  duration-200   cursor-pointer' 
+                                  onClick={(data)=>{
                                      setImageId(
 
-                                        item.id===1 ? Book1:
-                                        item.id===1 ? Book2:
+                                        data.id===1 ? Book1:
+                                        data.id===1 ? Book2:
                                         Book3
                                      );
-                                     setTitle(item.title);
-                                     setDescription(item.description);
+                                     setTital(data.title);
+                                     setDescription(data.description);
 
 
 
