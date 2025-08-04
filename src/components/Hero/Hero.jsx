@@ -77,7 +77,7 @@ const Hero = () => {
                                   <img src={data.img} alt=""
                                   className='max-w-[100px] h-[100px] object-contain inline-block hover:scale-110  duration-200   cursor-pointer' 
                                   onClick={(data)=>{
-                                     setImageId(
+                                     setImageid(
 
                                         data.id===1 ? Book1:
                                         data.id===1 ? Book2:
@@ -85,10 +85,7 @@ const Hero = () => {
                                      );
                                      setTital(data.title);
                                      setDescription(data.description);
-
-
-
-                                  }}
+                                    }}
                                   />
 
 
