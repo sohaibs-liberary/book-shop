@@ -66,16 +66,22 @@ const Hero = () => {
                         <div className='min-h-[450px] flex justify-center itme-center order-1 sm:order-2' >
 
                             {/*Main-Image */}
-                            <div className="h-[300px ] sm:h-[450px] overflow-hidden flex justify-center  items-center ">
+                            <div className=" h-[300px ]  sm:h-[450px]  overflow-hidden  lg:flex  justify-center  items-center ">
                                 <img src={imageid} alt="" className=' w-[300px] h-[300px] sm:h-[450px ] sm:[w-450px] sm:scale-125 object-contain mx-auto ' />
                             </div>
                             {/*Other-Image-List */}
-                            <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center  gap-4 absulate  -bottom-[40px] lg: -right-1  bg-white rounded-full'>
+                            <div className='flex lg:flex-col  lg:top-1/2 lg:-translate-y-10 lg:py-2 justify-center gap-4 absulate -bottom-[40px] lg: -right-1  bg-white rounded-full '>
                             {
                                 ImageList.map((data)=>(
 
                                   <img src={data.img} alt=""
-                                  className='max-w-[100px] h-[100px] object-contain inline-block hover:scale-110  duration-200  ' />
+                                  className='max-w-[100px] h-[100px] object-contain inline-block hover:scale-110  duration-200  
+                                  ' 
+                                  onClick={
+                                    {
+                                        
+                                    }
+                                  }/>
 
                                 ))
                             }
