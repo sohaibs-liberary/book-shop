@@ -7,7 +7,7 @@ import Vector from "../../assets/images/blue-pattern-frndFZgs.png"
 const Hero = () => {
 
     const [imageid, setImageid] = useState(Book1);
-    const [tital, settital] = useState(" His Life will forever be Changed ");
+    const [tital, setTital] = useState(" His Life will forever be Changed ");
     const [description, setDescription] = useState(" His Whole Life by Elizabeth Hay is a coming-of-age story set in the mid-1990s following a young boy named Jim as his family grapples with a faltering marriage and the political tensions surrounding Quebecs potential separation from Canada.");
 
     const bgImage = {
@@ -45,7 +45,7 @@ const Hero = () => {
     return (
         <>
             <div className='min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center  dark:bg-gray-950 dark:text-white duration-200 
-  '   style={bgImage} >
+            'style={bgImage} >
                 <div className="cointerner pb-8 sm:pb-0 ">
                     <div className='grid grid-cols-1 sm:grid-cols-2'>
                         {/*text-content-section*/}
@@ -70,21 +70,30 @@ const Hero = () => {
                                 <img src={imageid} alt="" className=' w-[300px] h-[300px] sm:h-[450px ] sm:[w-450px] sm:scale-125 object-contain mx-auto ' />
                             </div>
                             {/*Other-Image-List */}
-                            <div className='flex lg:flex-col  lg:top-1/2 lg:-translate-y-10 lg:py-2 justify-center gap-4 absulate -bottom-[40px] lg: -right-1  bg-white rounded-full '>
+                            <div className='flex lg:flex-col  lg:top-1/2 lg:-translate-y-10 lg:py-2 justify-center gap-4 absulate -bottom-[40px] lg: -right-1 bg-white rounded-full '>
                             {
                                 ImageList.map((data)=>(
 
                                   <img src={data.img} alt=""
                                   className='max-w-[100px] h-[100px] object-contain inline-block hover:scale-110  duration-200  
                                   ' 
-                                  onClick={
-                                    {
-                                        
-                                    }
-                                  }/>
+                                  onClick={()=>{
+                                     setImageId(
 
-                                ))
-                            }
+                                        item.id===1 ? Book1:
+                                        item.id===1 ? Book2:
+                                        Book3
+                                     );
+                                     setTitle(item.title);
+                                     setDescription(item.description);
+
+
+
+                                  }}
+                                  />
+
+
+                                ))}
                             </div>
                         </div>
                     </div>
