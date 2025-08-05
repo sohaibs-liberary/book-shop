@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from "./components/Navbar/Navbar";
 import Hero from './components/Hero/Hero';
+import BestBooks from './components/BestBooks.js/BestBooks';
 
 const App = () => {
   return (
@@ -8,7 +9,9 @@ const App = () => {
     <>
     <div>
      <Navbar/>
-     <Hero/>      
+     <Hero/>  
+     <BestBooks/>  
+
     </div>
     </>
   )
