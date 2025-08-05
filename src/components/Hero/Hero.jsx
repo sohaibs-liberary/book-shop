@@ -63,10 +63,10 @@ const Hero = () => {
                             </div>
                         </div>
                         {/* Image section */}
-                        <div className='min-h-[450px] flex justify-center itme-center order-1 sm:order-2' >
+                        <div className='min-h-[450px] lg:flex justify-center  itme-center order-1 sm:order-2' >
 
                             {/*Main-Image */}
-                            <div className=" h-[300px ]  sm:h-[450px]  overflow-hidden  lg:flex  justify-center  items-center ">
+                            <div className=" h-[300px ]  sm:h-[450px]  overflow-hidden  flex  justify-center  items-center ">
                                 <img src={imageid} alt="" className=' w-[300px] h-[300px] sm:h-[450px ] sm:[w-450px] sm:scale-125 object-contain mx-auto ' />
                             </div>
                             {/*Other-Image-List */}
@@ -76,14 +76,14 @@ const Hero = () => {
 
                                   <img src={data.img} alt=""
                                   className='max-w-[100px] h-[100px] object-contain inline-block hover:scale-110  duration-200   cursor-pointer' 
-                                  onClick={(data)=>{
+                                  onClick={()=>{
                                      setImageid(
 
                                         data.id===1 ? Book1:
-                                        data.id===1 ? Book2:
+                                        data.id===2 ? Book2:
                                         Book3
                                      );
-                                     setTital(data.title);
+                                     setTital(data.tital);
                                      setDescription(data.description);
                                     }}
                                   />
