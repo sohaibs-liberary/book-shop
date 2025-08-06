@@ -44,7 +44,7 @@ const BestBooks = () => {
                     <img src={books.img} alt="" />
                   </div>
                   <div>
-                    <div className='w-full flex items-center justify-center' >
+                    <div className='w-full flex items-center justify-center ' >
                       <FaStar
                       className='text-yellow-500'/>
                       <FaStar
@@ -55,8 +55,8 @@ const BestBooks = () => {
                       className='text-yellow-500'/>
                     </div>
                     <h1 className='text-xl font-bold' >{books.tital}</h1>
-                    <p>{books.description}</p>
-                    <button className=''>Order Now</button>
+                    <p className='text-gray-500  group-hover:text-white duration-300 text-sm line-clamp-2 '>{books.description}</p>
+                    <button className='bg-purple-600 '>Order Now</button>
                   </div>
                 </div>
               ))
