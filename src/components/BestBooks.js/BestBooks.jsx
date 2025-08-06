@@ -41,7 +41,9 @@ const BestBooks = () => {
               BooksData.map((books) => (
                 <div className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-purple-600 dark:hover:bg-purple-700 hover:text-white relative  shadow-2xl duration-high group max-w-[300px] '>
                   <div className='h-[100px]'>
-                    <img src={books.img} alt="" />
+                    <img src={books.img} alt=""
+                    className='max-w-[100px] block mx-auto transform -translate-y-24 ' />
+
                   </div>
                   <div>
                     <div className='w-full flex items-center justify-center ' >
@@ -56,7 +58,7 @@ const BestBooks = () => {
                     </div>
                     <h1 className='text-xl font-bold' >{books.tital}</h1>
                     <p className='text-gray-500  group-hover:text-white duration-300 text-sm line-clamp-2 '>{books.description}</p>
-                    <button className='bg-purple-600 '>Order Now</button>
+                    <button className='bg-purple-600 text-white font-bold  hover:bg-white hover:text-purple-500 hover:font-semibold py-3 px-5 rounded-full '>Order Now</button>
                   </div>
                 </div>
               ))
