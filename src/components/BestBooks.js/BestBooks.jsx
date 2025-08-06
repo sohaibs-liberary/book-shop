@@ -22,7 +22,7 @@ const BestBooks = () => {
       id: 3,
       img: Img3,
       tital: "Lost Boy",
-      description: "Lost Boy by Christina Henry offers a dark, gritty .",
+      description: "Lost Boy by Christina Henry offers a dark, gritty retelling of the Peter Pan story, focusing on the relationship between Peter and his first Lost Boy, Jamie, before the arrival of Wendy. ",
     },
   ]
   return (
@@ -39,31 +39,26 @@ const BestBooks = () => {
             {/*Card-1*/}
             {
               BooksData.map((books) => (
-
-                <div className=''>
-
-                  <div className="image text-center px-10">
-                    <img src={books.img} alt="" className='w-40 h-60 ' />
-                  <div className="text">
-                    <div className="flex w-full font-extrabold items-center justify-center py-3">
-                      <FaStar
-                        className='text-yellow-500' />
-                      <FaStar
-                        className='text-yellow-500' />
-                      <FaStar
-                        className='text-yellow-500' />
-                      <FaStar
-                        className='text-yellow-500' />
-
-                    </div>
-
+                <div className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-purple-600 dark:hover:bg-purple-700 hover:text-white relative  shadow-2xl duration-high group max-w-[300px] '>
+                  <div className='h-[100px]'>
+                    <img src={books.img} alt="" />
                   </div>
-                    <h1 className='text-center '>{books.tital}</h1>
-                    <p className='text-center'>{books.description}</p>
-                    <button className='bg-gradient-to-r from-purple-700 to-pink-500  text-white py-2 px-8  font-semibold rounded-full'>Order Now</button>
+                  <div>
+                    <div className='w-full flex items-center justify-center' >
+                      <FaStar
+                      className='text-yellow-500'/>
+                      <FaStar
+                      className='text-yellow-500'/>
+                      <FaStar
+                      className='text-yellow-500'/>
+                      <FaStar
+                      className='text-yellow-500'/>
+                    </div>
+                    <h1 className='text-xl font-bold' >{books.tital}</h1>
+                    <p>{books.description}</p>
+                    <button className=''>Order Now</button>
                   </div>
                 </div>
-
               ))
             }
           </div>

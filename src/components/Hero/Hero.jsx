@@ -4,7 +4,7 @@ import Book2 from "../../assets/images/book1-T1QIvOvc.jpg"
 import Book3 from "../../assets/images/book3-5_h1HoKi.jpg"
 import Vector from "../../assets/images/blue-pattern-frndFZgs.png"
 
-const Hero = () => {
+const  Hero = () => {
 
     const [imageid, setImageid] = useState(Book1);
     const [tital, setTital] = useState(" His Life will forever be Changed ");
