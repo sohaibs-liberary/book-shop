@@ -42,10 +42,10 @@ const BestBooks = () => {
                 <div className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-purple-600 dark:hover:bg-purple-700 hover:text-white relative  shadow-2xl duration-high group max-w-[300px] '>
                   <div className='h-[100px]'>
                     <img src={books.img} alt=""
-                    className='max-w-[100px] block mx-auto transform -translate-y-24 ' />
+                    className='max-w-[100px] block mx-auto transform -translate-y-16 group-hover:scale-105  duration-200 shadow-sm ' />
 
                   </div>
-                  <div>
+                  <div className='p-4 text-center'>
                     <div className='w-full flex items-center justify-center ' >
                       <FaStar
                       className='text-yellow-500'/>
@@ -56,9 +56,9 @@ const BestBooks = () => {
                       <FaStar
                       className='text-yellow-500'/>
                     </div>
-                    <h1 className='text-xl font-bold' >{books.tital}</h1>
-                    <p className='text-gray-500  group-hover:text-white duration-300 text-sm line-clamp-2 '>{books.description}</p>
-                    <button className='bg-purple-600 text-white font-bold  hover:bg-white hover:text-purple-500 hover:font-semibold py-3 px-5 rounded-full '>Order Now</button>
+                    <h1 className='text-xl font-bold  flex items-center justify-center ' >{books.tital}</h1>
+                    <p className='text-gray-500  group-hover:text-white duration-300 text-sm line-clamp-2   flex items-center justify-center '>{books.description}</p>
+                    <button className='bg-purple-600  text-white font-bold  group-hover:bg-white group-hover:text-purple-500 hover:font-semibold py-2 px-9 rounded-full mx-20 hover:scale-105  duration-200 mt-3'>Order Now</button>
                   </div>
                 </div>
               ))
