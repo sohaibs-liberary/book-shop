@@ -47,7 +47,7 @@ const BestBooks = () => {
                   <div className="text">
                     <div className="flex w-full font-extrabold items-center justify-center py-3">
                       <FaStar
-                        className='text-yellow-500 ' />
+                        className='text-yellow-500' />
                       <FaStar
                         className='text-yellow-500' />
                       <FaStar
