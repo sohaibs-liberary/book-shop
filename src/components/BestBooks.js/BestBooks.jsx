@@ -10,19 +10,19 @@ const BestBooks = () => {
       id: 1,
       img: Img1,
       tital: "His Life will forever be Changed",
-      description: "His Whole Life by Elizabeth Hay is a coming-of-age story set in the mid-1990s following a young boy named Jim as his family grapples with a faltering marriage and the political tensions surrounding Quebecs potential separation from Canada.",
+      description: "His Whole Life by Elizabeth Hay is a coming-of-age story set in the mid-1990s following a young .",
     },
     {
       id: 2,
       img: Img2,
       tital: "Who's there",
-      description: "Who's There? by Stephanie S. Tolan is a young adult novel about two orphaned siblings, Drew and Evan Broderick, who move into their late father's childhood home, Rose Hill, after their parents die in a gas explosion.",
+      description: "Who's There? by Stephanie S. Tolan is a young adult novel about two orphaned ."
     },
     {
       id: 3,
       img: Img3,
       tital: "Lost Boy",
-      description: "Lost Boy by Christina Henry offers a dark, gritty retelling of the Peter Pan story, focusing on the relationship between Peter and his first Lost Boy, Jamie, before the arrival of Wendy. ",
+      description: "Lost Boy by Christina Henry offers a dark, gritty retelling of the Peter Pan story, focusing on the relationship  ",
     },
   ]
   return (
