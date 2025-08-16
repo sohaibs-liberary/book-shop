@@ -5,6 +5,7 @@ import BestBooks from './components/BestBooks.js/BestBooks';
 import Banner from './components/Banner/Banner';
 import AppStoreBanner from './components/AppStoreBanner/AppStoreBanner';
 import AllBooks from './components/AllBooks/AllBooks';
+import Testimontal from './components/Testimotional/Testimontal';
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
      <Banner /> 
      <AppStoreBanner />
      <AllBooks />
+     <Testimontal />
+
      
 
     </div>
@@ -26,4 +29,4 @@ const App = () => {
 
 export default App
 
-{/*1:32:31*/}
+{/*1:46:48*/}
