@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import BestBooks from './components/BestBooks.js/BestBooks';
 import Banner from './components/Banner/Banner';
 import AppStoreBanner from './components/AppStoreBanner/AppStoreBanner';
+import AllBooks from './components/AllBooks/AllBooks';
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
      <Hero/>  
      <BestBooks/> 
      <Banner /> 
-     <AppStoreBanner /> 
+     <AppStoreBanner />
+     <AllBooks />
+     
 
     </div>
     </>
